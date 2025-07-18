@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Productos - Juliette Accesorios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #d4a017;
+      padding: 15px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-family: 'Parisienne', cursive;
+      margin: 0;
+    }
+
+    nav.menu ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav.menu a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .grid-categorias {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 15px;
+      padding: 30px;
+    }
+
+    .categoria {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .categoria img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .categoria h2 {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      color: white;
+      font-size: 24px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .categoria a.boton {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      background-color: black;
+      color: white;
+      padding: 8px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Juliette Accesorios</h1>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="como-comprar.html">Cómo Comprar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="grid-categorias">
+      <div class="categoria">
+        <img src="img aros.jpg" alt="Aros">
+        <h2>Aros</h2>
+        <a href="aritos.html" class="boton">Ver más</a>
+      </div>
+      <div class="categoria">
+        <img src="img anillos.jpg" alt="Anillos">
+        <h2>Anillos</h2>
+        <a href="anillos.html" class="boton">Ver más</a>
+      </div>
+      <div class="categoria">
+        <img src="img cadenas.jpg" alt="Collares">
+        <h2>Collares</h2>
+        <a href="collares.html" class="boton">Ver más</a>
+      </div>
+      <div class="categoria">
+        <img src="img pulseras.jpg" alt="Pulseras">
+        <h2>Pulseras</h2>
+        <a href="pulseras.html" class="boton">Ver más</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contacto: 2364-344049</p>
+  </footer>
+</body>
+</html>
